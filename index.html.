@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nubo</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #172033;
+    }
+
+    header {
+      background: white;
+      padding: 22px;
+      text-align: center;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 35px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .card h2 {
+      font-size: 28px;
+      margin-top: 0;
+    }
+
+    .card p {
+      font-size: 18px;
+      color: #667085;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 12px;
+      background: #172033;
+      color: white;
+      font-size: 17px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.85;
+    }
+
+    #mensaje {
+      margin-top: 25px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>☁️ Nubo</h1>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Bienvenido a Nubo</h2>
+
+      <p>
+        Tu espacio educativo para aprender, organizar tus tareas
+        y avanzar paso a paso.
+      </p>
+
+      <button onclick="comenzar()">
+        Comenzar
+      </button>
+
+      <div id="mensaje"></div>
+    </section>
+  </main>
+
+  <script>
+    function comenzar() {
+      document.getElementById("mensaje").textContent =
+        "¡Bienvenido a Nubo! 🚀";
+    }
+  </script>
+
+</body>
+</html>
